@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coffee Shop Discount</title>
+</head>
+<body>
+  <h1>Coffee Shop Discount</h1>
+  <script>
+    // Default customer age
+    let customerAge = 30;
+
+    // Ask the user if they are a student
+    let isStudent = confirm("Are you a student?");
+
+    // Calculate the discount based on age and student status
+    let discountMessage;
+    if (customerAge >= 65) {
+      discountMessage = "You get a 10% discount";
+    } else if (isStudent && customerAge >= 18 && customerAge <= 25) {
+      discountMessage = "You get a 5% discount";
+    } else {
+      discountMessage = "No discount";
+    }
+
+    // Display the discount message
+    document.write("<p>" + discountMessage + "</p>");
+  </script>
+</body>
+</html>
